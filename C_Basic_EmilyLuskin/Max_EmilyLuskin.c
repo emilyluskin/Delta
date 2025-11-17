@@ -1,3 +1,8 @@
+/*------------------------------------------------------
+* Filename: Max_EmilyLuskin.c
+* Description: Finds the maximum of two numbers here
+* Author: Emily Luskin
+-------------------------------------------------------*/
 #include <stdio.h>
 int main() {
     int x=5;
