@@ -17,6 +17,7 @@
 *
 * Author - Emily Luskin
 -------------------------------------------------------*/
+void check_array_series(int arr[]);
 
 void check_array_series(int arr[]) {
     int increasing = 0, decreasing = 0, equal = 0;
@@ -43,11 +44,18 @@ void check_array_series(int arr[]) {
 int main() {
     int numbers[ARRAY_SIZE];
     printf("Enter %d integers:\n", ARRAY_SIZE);
-
     for(int i = 0; i < ARRAY_SIZE; i++) {
-        scanf("%d", &numbers[i]);
+        while(1) {
+            printf("Number %d: ", i + 1);
+            if(scanf("%d", &numbers[i]) == 1) {
+                break;
+            } 
+            else {
+                printf("Invalid input! Please enter an integer.\n");
+                while(getchar() != '\n');
+            }
+        }
     }
-
     check_array_series(numbers);
     return 0;
 }
