@@ -17,6 +17,11 @@
 *
 * Author - Emily Luskin
 -------------------------------------------------------*/
+void PrintArr(int* arr, int size);
+int* remove_dup1(int* arr, int size, int* newSize);
+int remove_dup2(int* arr, int size, int** newArr);
+void remove_dup3(int* arr, int size, int** newArr, int* newSize);
+
 void PrintArr(int* arr, int size) {
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
