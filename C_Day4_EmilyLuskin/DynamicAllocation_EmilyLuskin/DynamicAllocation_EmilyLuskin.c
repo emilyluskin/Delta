@@ -1,5 +1,5 @@
 /*------------------------------------------------------
-* Filename: DynamicStruct_EmilyLuskin.c
+* Filename: DynamicAllocation_EmilyLuskin.c
 * Description: The program sums the hours, minutes and seconds of 2 times.
 * Author: Emily Luskin
 -------------------------------------------------------*/
